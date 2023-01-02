@@ -17,50 +17,74 @@ class _screen3State extends State<screen3> {
          Container(
            height: 500,
            width: double.infinity,
-           child: Row(
-             crossAxisAlignment: CrossAxisAlignment.start,
+           child: Column(
              children: [
-               Container(
-                 height: 100,
-                 width: 500,
-                 //color: Colors.red,
-                 child: Column(
-                   crossAxisAlignment: CrossAxisAlignment.start,
-                   children: [
-                     Row(
+               Row(
+                 crossAxisAlignment: CrossAxisAlignment.start,
+                 children: [
+                   Container(
+                     height: 100,
+                     width: 500,
+                     //color: Colors.red,
+                     child: Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Container(
-                           height: 100,
-                           width: 60,
-                           child: Icon(Icons.person_pin,
-                           color: Colors.white,
-                             size: 70,
-                           ),
-                         ),
-                         Container(
-                           height: 100,
-                           width: 150,
-                           alignment: Alignment.center,
-                           child: Text("Name",
-                           style: TextStyle(
-                             fontSize: 50,
-                             color: Colors.white
-                           ),
-                           ),
-                         ),
-                         SizedBox(width: 180,),
-                         Container(
-                           height: 100,
-                           width: 60,
-                           child: Icon(Icons.shopping_bag_outlined,
-                             size: 70,
-                             color: Colors.white,
-                           ),
+                         Row(
+                           children: [
+                             Container(
+                               height: 100,
+                               width: 60,
+                               child: Icon(Icons.person_pin,
+                               color: Colors.white,
+                                 size: 70,
+                               ),
+                             ),
+                             Container(
+                               height: 100,
+                               width: 150,
+                               alignment: Alignment.center,
+                               child: Text("Name",
+                               style: TextStyle(
+                                 fontSize: 50,
+                                 color: Colors.white
+                               ),
+                               ),
+                             ),
+                             SizedBox(width: 180,),
+                             Container(
+                               height: 100,
+                               width: 60,
+                               child: Icon(Icons.shopping_bag_outlined,
+                                 size: 70,
+                                 color: Colors.white,
+                               ),
+                             ),
+                           ],
                          ),
                        ],
-                     )
-                   ],
-                 ),
+                     ),
+                   ),
+                 ],
+               ),
+               Container(
+                   height: 20,
+                   width: 500,
+                   decoration: BoxDecoration(
+                       border:Border(top: BorderSide(color: Colors.yellow)))
+               ),
+               Row(
+                 //mainAxisAlignment: M,
+                 children: [
+                   Container(
+                     margin: EdgeInsets.only(left: 20,right: 20),
+                     height: 60,
+                     width: 500,
+                     child: Icon(Icons.mark_email_unread_sharp,
+                     color: Colors.white,
+                       size: 50,
+                     ),
+                   ),
+                 ],
                ),
              ],
            ),
