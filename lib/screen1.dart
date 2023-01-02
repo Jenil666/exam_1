@@ -44,26 +44,19 @@ class _screen1State extends State<screen1> {
               ),
               SizedBox(height: 100,),
 
-              InkWell(
-                onTap: (){
-                  setState(() {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => screen2(),));
-                  });
-                },
-                child: Container(
-                  height: 60,
-                  width: 300,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                      borderRadius: BorderRadius.circular(10)
-                  ),
-                  alignment: Alignment.center,
-                  child: Text("Start shopping",
-                  style: TextStyle(
-                    color: Colors.pinkAccent,
-                    fontSize: 25,
-                  ),
-                  ),
+              Container(
+                height: 60,
+                width: 300,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                alignment: Alignment.center,
+                child: Text("Start shopping",
+                style: TextStyle(
+                  color: Colors.pinkAccent,
+                  fontSize: 25,
+                ),
                 ),
               ),
               SizedBox(height: 80,),
@@ -80,16 +73,23 @@ class _screen1State extends State<screen1> {
                 ),
               ),
               //SizedBox(height: 30,),
-              Container(
-                height: 60,
-                width: double.infinity,
-                //color: Colors.red,
-                alignment: Alignment.center,
-                child: Text("Sign in Here",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 35,
-                ),
+              InkWell(
+                onTap: (){
+                  setState(() {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => screen2(),));
+                  });
+                },
+                child: Container(
+                  height: 60,
+                  width: double.infinity,
+                  //color: Colors.red,
+                  alignment: Alignment.center,
+                  child: Text("Sign in Here",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 35,
+                  ),
+                  ),
                 ),
               ),
 
